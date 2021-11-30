@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://use.fontawesome.com/4c841fa185.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/CSS/style.css">
+
+    <script>
+        // Array con las imagenes y enlaces que se iran mostrando en la web
+
+        var imagenes = new Array(
+            ['/images/imagenrotativa1.jpg', 'zapatos.html'], ['/images/imagenrotativa2.jpg', 'zapatos.html'], ['/images/imagenrotativa3.jpg', 'zapatos.html'], ['/images/imagenrotativa4.jpg', 'zapatos.html']
+        );
+        var contador = 0;
+
+
+        // Funcion para cambiar la imagen y link
+
+        function rotarImagenes() {
+            // cambiamos la imagen y la url
+            contador++
+            document.getElementById("imagenlink").src = imagenes[contador % imagenes.length][0];
+            document.getElementById("link").href = imagenes[contador % imagenes.length][1];
+        }
+
+        // Función que se ejecuta una vez cargada la página
+
+        onload = function() {
+            // Cargamos una imagen aleatoria
+            rotarImagenes();
+
+            // Indicamos que cada 5 segundos cambie la imagen
+            setInterval(rotarImagenes, 5000);
+        }
+    </script>
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header>
+        <div id="divnavbar">
+            <ul id="navbar">
+                <li>
+                    <h1 id="titulo">STREETWEAR </h1>
+                </li>
+                <li id="linavbar"><a id="enlacenavbar" href="carrito.html">CARRITO</a></li>
+                <li id="linavbar"><a id="enlacenavbar" href="contactenos.html">CONTÁCTENOS</a></li>
+                <li id="linavbar"><a id="enlacenavbar" href="zapatos.html">ZAPATOS</a></li>
+                <li id="linavbar"><a id="enlacenavbar" class="active" href="index.html">INICIO</a>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <p class="descripcion">Bienvenido a StreetWear, una pagina web donde comprar tus zapatos.</p>
+    </header>
+    <br>
+    <div class="imagenescambiando">
+        <a id="link" href="zapatos.html"><img id="imagenlink" src="" width="600" height="400"></a>
+    </div>
+    <div id="divvideo">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AZy3V62t9K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="segundovideo" width="560" height="315" src="https://www.youtube.com/embed/J0ifKoot9m8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+
+
+</html>

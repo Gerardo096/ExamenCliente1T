@@ -1,0 +1,75 @@
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(69, 85, 87);
+}
+
+#linavbar {
+    float: right;
+}
+
+#divnavbar {}
+
+#enlacenavbar {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #17afc4;
+}
+
+.active {
+    background-color: #17afc4;
+}
+
+#titulo {
+    color: white;
+    float: left;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+.descripcion {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.imagenescambiando {
+    text-align: center;
+}
+
+#imagenlink {
+    border: 1px solid rgb(69, 85, 87);
+    border-radius: 4px;
+    border-width: thick;
+}
+
+body {
+    background-color: #40747a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#divvideo {
+    margin-top: 5%;
+    text-align: center;
+}
+
+#segundovideo {
+    margin-left: 2%;
+}
