@@ -6,13 +6,11 @@
     background-color: rgb(69, 85, 87);
 }
 
-#linavbar {
+.linavbar {
     float: right;
 }
 
-#divnavbar {}
-
-#enlacenavbar {
+.enlacenavbar {
     display: block;
     color: white;
     text-align: center;
@@ -54,6 +52,7 @@ li a:hover {
 body {
     background-color: #40747a;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
 }
 
 header {
@@ -65,11 +64,114 @@ header {
     padding: 0;
 }
 
+html {
+    height: 100%;
+}
+
 #divvideo {
     margin-top: 5%;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
 #segundovideo {
     margin-left: 2%;
+}
+
+footer {
+    background-color: rgb(69, 85, 87);
+    padding: 20px;
+    color: white;
+    width: 99%;
+    margin-top: auto;
+}
+
+.ulfooter {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.divfooter {
+    text-align: center;
+}
+
+.lifooter {
+    padding: 0 10px;
+}
+
+.afooter {
+    font-size: 25px;
+    width: 30px;
+    height: 25px;
+    line-height: 10px;
+    display: inline-block;
+    color: white;
+}
+
+.afooter2 {
+    color: white;
+    text-decoration: none;
+}
+
+#divzapatos {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    min-height: 100%;
+}
+
+.botonañadir {
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #17afc4;
+}
+
+#divzapatos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divzapatos {
+    margin: 30px;
+}
+
+#mostrarCarrito {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#divcarrito {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.botonbasura {
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: red;
 }

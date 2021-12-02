@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/formulario.css">
+    <script src="JS/validar.js"></script>
+
+    <title>Pagos</title>
+</head>
+
+<body>
+    <header>
+        <div id="divnavbar">
+            <ul id="navbar">
+                <li>
+                    <h1 id="titulo">STREETWEAR </h1>
+                </li>
+                <li class="linavbar"><a class="enlacenavbar" id="vercarrito" href="carrito.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li class="linavbar"><a class="enlacenavbar " href="zapatos.html">ZAPATOS</a></li>
+                <li class="linavbar"><a class="enlacenavbar" href="index.html">INICIO</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <div id="divform">
+        <form id="formulario" method="post">
+            <h1>Formulario de Pago</h1>
+
+            <fieldset>
+
+                <p>
+                    <label> Nombre:
+                    <input type="text" id="nombre" placeholder="Nombre" required />
+                </label>
+                </p>
+                <p>
+                    <label> Apellidos:
+                    <input type="text" id="apellidos" placeholder="Apellidos" required />
+                </label>
+                </p>
+
+                <p>
+                    <label> Email:
+                    <input type="text" id="email" placeholder="user@user.user" required />
+                </label>
+                </p>
+                <p>
+                    <label> Ciudad:
+                    <input type="text" id="ciudad"  placeholder="Sevilla" required />
+                </label>
+                </p>
+                <p>
+                    <label> Provincia:
+                    <input type="text" id="provincia"  placeholder="Carmona" required />
+                </label>
+                </p>
+
+
+                <p>
+                    <label> Nº de Tarjeta:
+                    <input type="text" id="numero" placeholder="1234-5678-9123-4567" required/>
+                </label>
+                </p>
+
+
+                <label> Codigo de Seguridad:
+                        <input type="number" id="codigo" placeholder="000"  required/>
+                    </label>
+                </label>
+                </p>
+                <p id="errores"></p>
+                <p>
+                    <input type="reset" name="limpiar" id="button" value="Limpiar" />
+                    <input type="submit" name="enviar" id="enviar" value="Finalizar Compra" />
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+
+</html>

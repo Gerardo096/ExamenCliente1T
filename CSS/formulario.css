@@ -1,0 +1,61 @@
+h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form label {
+    font-weight: bold;
+}
+
+fieldset {
+    border-style: groove;
+    border-color: rgb(69, 85, 87);
+    border-radius: 10px;
+}
+
+form fieldset {
+    width: 100%;
+}
+
+#divform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+}
+
+#errores {
+    background-color: red;
+}
+
+#button {
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #17afc4;
+}
+
+#enviar {
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #17afc4;
+}
