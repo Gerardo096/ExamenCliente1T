@@ -28,7 +28,7 @@ function inicializar() {
 
         var expRegNombre = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
         var valueNombre = document.getElementById("nombre").value;
-        document.formulario.nombre.value = valueNombre.toString().toUpperCase();
+
 
         if (expRegNombre.test(valueNombre)) {
             document.getElementById("errores").innerHTML = "";
@@ -44,7 +44,7 @@ function inicializar() {
     function validarApellidos() {
         var expRegApellidos = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
         var valueApellidos = document.getElementById("apellidos").value;
-        document.formulario.apellidos.value = valueApellidos.toString().toUpperCase();
+
 
         if (expRegApellidos.test(valueApellidos)) {
             document.getElementById("errores").innerHTML = "";
@@ -76,7 +76,7 @@ function inicializar() {
 
         var expRegCiudad = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
         var valueCiudad = document.getElementById("ciudad").value;
-        document.formulario.ciudad.value = valueCiudad.toString().toUpperCase();
+
 
         if (expRegCiudad.test(valueCiudad)) {
             document.getElementById("errores").innerHTML = "";
@@ -93,7 +93,6 @@ function inicializar() {
 
         var expRegProvincia = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
         var valueProvincia = document.getElementById("provincia").value;
-        document.formulario.provincia.value = valueProvincia.toString().toUpperCase();
 
         if (expRegProvincia.test(valueProvincia)) {
             document.getElementById("errores").innerHTML = "";
