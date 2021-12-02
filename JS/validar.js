@@ -17,7 +17,7 @@ function inicializar() {
     provincia.addEventListener("focusout", validarCiudad);
     codigo.addEventListener("focusout", validarCodigo);
     email.addEventListener("focusout", validarEmail);
-    document.getElementById("enviar").addEventListener("submit", finalizar, false);
+    document.getElementById("formulario").addEventListener("submit", finalizar, false);
 
 
 
